@@ -1,0 +1,8 @@
+{
+  "vmName": "myVM-3mttDHF",
+  "vmResourceId": "/subscriptions/.../virtualMachines/myVM-3mttDHF",
+  "vmLocation": "southafricanorth",
+  "networkInterfaceId": "/subscriptions/.../networkInterfaces/myvm-3mttdhf161_z1",
+  "publicIP": "4.222.235.xxx",
+  "adminUsername": "MyFreeTier"
+}
