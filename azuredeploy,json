@@ -1,0 +1,86 @@
+{
+    "apiVersion": "2025-11-01",
+    "id": "/subscriptions/ea403dd0-a0da-421d-af3b-7f3c26050b64/resourceGroups/myVM-3MTT-NEXTGEN-Cohort4/providers/Microsoft.Compute/virtualMachines/myVM-3mttDHF",
+    "name": "myVM-3mttDHF",
+    "type": "microsoft.compute/virtualmachines",
+    "location": "southafricanorth",
+    "zones": [
+        "1"
+    ],
+    "properties": {
+        "hardwareProfile": {
+            "vmSize": "Standard_D2_v4"
+        },
+        "provisioningState": "Succeeded",
+        "vmId": "e64947fd-fad9-4347-b6c5-f830a13a1dd6",
+        "additionalCapabilities": {
+            "hibernationEnabled": false
+        },
+        "storageProfile": {
+            "imageReference": {
+                "publisher": "canonical",
+                "offer": "ubuntu-24_04-lts",
+                "sku": "ubuntu-pro",
+                "version": "latest",
+                "exactVersion": "24.04.202604130"
+            },
+            "osDisk": {
+                "osType": "Linux",
+                "name": "myVM-3mttDHF_OsDisk_1_5b9347908b87444483ad99969d73ddb1",
+                "createOption": "FromImage",
+                "caching": "ReadWrite",
+                "managedDisk": {
+                    "storageAccountType": "Standard_LRS",
+                    "id": "/subscriptions/ea403dd0-a0da-421d-af3b-7f3c26050b64/resourceGroups/myVM-3MTT-NEXTGEN-Cohort4/providers/Microsoft.Compute/disks/myVM-3mttDHF_OsDisk_1_5b9347908b87444483ad99969d73ddb1"
+                },
+                "deleteOption": "Delete",
+                "diskSizeGB": 30
+            },
+            "dataDisks": [],
+            "diskControllerType": "SCSI"
+        },
+        "osProfile": {
+            "computerName": "myVM-3mttDHF",
+            "adminUsername": "MyFreeTier",
+            "linuxConfiguration": {
+                "disablePasswordAuthentication": true,
+                "ssh": {
+                    "publicKeys": [
+                        {
+                            "path": "/home/MyFreeTier/.ssh/authorized_keys",
+                            "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDIVRgV6CFSfiejb659H/bpNoHLy/htgHHmbC5djXJ8BkPs9Dz4/t5sNxFAMlvooggZSdkxO8JYUDtHILFHf5HnKR9D7oeVVchsykzG0hY9Q4VUb1Hv2Z1b1sHliXP72FVXQuoQ5NrUcXypl4MPZ2A9v1zG3Wg91jIWqEQ56A+Z+ZIE5NdoSaeAGNMz71ILpfRDjBwot/hguMdwT1Y05BlrAPg3jzw2P+BJWml5UvMFe4NNuH0jjLIfbx5A+XiHEKZFN92M/e5157f0LQD/dQ2CCsd5gkkS/bS0jaAl4R3D/fCRTOjYNzW0KWKFZO8lI7BJXfQU+51h61XXLl+GT9Oe5jyR1ZDBfVEEpwdABpvZlDiGQ7M7gLYhZk5t8PSqnIEeOE+/8wB0umBb2APftF8+CoQKmP6RK32KmUNHUhejf1073iEQJZGOrKVPQPsI+HZdioUSGoi4Ry3JuNHR091N07zeWt/8buX2R5wKP2tenRNK/vYc1rXW5ZMLyuklhQU= generated-by-azure"
+                        }
+                    ]
+                },
+                "provisionVMAgent": true,
+                "patchSettings": {
+                    "patchMode": "ImageDefault",
+                    "assessmentMode": "ImageDefault"
+                }
+            },
+            "secrets": [],
+            "allowExtensionOperations": true,
+            "requireGuestProvisionSignal": true
+        },
+        "securityProfile": {
+            "securityType": "Standard"
+        },
+        "networkProfile": {
+            "networkInterfaces": [
+                {
+                    "id": "/subscriptions/ea403dd0-a0da-421d-af3b-7f3c26050b64/resourceGroups/myVM-3MTT-NEXTGEN-Cohort4/providers/Microsoft.Network/networkInterfaces/myvm-3mttdhf161_z1",
+                    "properties": {
+                        "deleteOption": "Detach"
+                    }
+                }
+            ]
+        },
+        "diagnosticsProfile": {
+            "bootDiagnostics": {
+                "enabled": true
+            }
+        },
+        "timeCreated": "2026-04-22T08:51:23.109Z"
+    },
+    "etag": "\"1\""
+}
